@@ -6,15 +6,14 @@ import PackageDescription
 let package = Package(
     name: "AlertToast",
     platforms: [
-        .iOS(.v14),
-        .macOS(.v11),
+        .iOS(.v15),
+        .macOS(.v11)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AlertToast",
-            targets: ["AlertToast"]
-        ),
+            targets: ["AlertToast"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -25,11 +24,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "AlertToast",
-            dependencies: []
-        ),
+            dependencies: []),
         .testTarget(
             name: "AlertToastTests",
-            dependencies: ["AlertToast"]
-        ),
+            dependencies: ["AlertToast"]),
     ]
 )
