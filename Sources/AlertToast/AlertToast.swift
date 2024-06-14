@@ -616,7 +616,7 @@ fileprivate struct WithFrameModifier: ViewModifier{
 }
 
 ///Fileprivate View Modifier to change the alert background
-@available(iOS 14, macOS 11, *)
+@available(iOS 15, macOS 11, *)
 fileprivate struct BackgroundModifier: ViewModifier{
 
     var color: Color?
